@@ -1,13 +1,16 @@
 $(function() {
     var $menu = $('.title'),
-        $header = $('header'),
-        $headerHeight = $header.outerHeight();
+        $header = $('.header');
 
     $menu.mouseover(function(){
         var subHeight = $(this).find('.nav__sub').outerHeight();
-        $header.stop().animate({height: $headerHeight + subHeight + 'px'}, 300);
+        $header.stop().animate({height: 100 + subHeight + 'px'}, 300);
+        $(this).find('.nav__sub').css('display', 'block');
+        $header.addClass("on");
     })
-    .mouseout(function(){
-        $header.stop().animate({height: $headerHeight + 'px'}, 300);
+    $header.mouseout(function(){
+        $header.stop().animate({height: 100 + 'px'}, 300);
+        $(this).find('.nav__sub').css('display', 'none');
+        $header.removeClass("on");
     });
-})
+});
