@@ -80,7 +80,7 @@
 .inquiry .icon {position: absolute; height: 40px; line-height: 40px; right: 60px; top: 30px; padding: 0 30px; border: 0 solid #fff; background: linear-gradient(268deg, #007DC5 0%, #00A651 100%); border-radius: 25px;}
 .inquiry span {position: relative; height: 100%; font-size: 14px; font-weight: 900; color: #fff;}
 /*모바일 설정*/
-@media all and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .header {height: 64px !important;}
     .header .header__wrap {height: 64px; max-width: none;}
     .header .nav {display: none;}
@@ -121,6 +121,14 @@
 .main .section1 .slick-dots li button {width: 40px; height: 40px; background: transparent; border: 1px solid rgba(255, 255, 255, 0.5); cursor: pointer; overflow: hidden; border-radius: 2px; text-indent: -9999px;}
 .main .section1 .slick-dots li.slick-active  button {background-color: #fff; border: 1px solid #fff;}
 
+/*모바일*/
+@media screen and (max-width: 1280px) {
+    .main .section1 .slick-dots {display: none !important;}
+    .main .section1 .slide__text {padding: 0 20px;}
+    .main .section1 .slide__title {font-size: 40px;}
+    .main .section1 .slide__subtitle p {font-size: 16px; line-height: 28px; letter-spacing: -0.4px;}
+}
+
 /*section2 부분*/
 .main .section2 .solution__wrap {position: relative; max-width: 1600px; width: 100%; padding: 120px 80px; margin: auto; }
 .main .section2 .title {position: absolute; top: 130px; left: 80px; padding-left: 18px; font-size: 16px; font-weight: 400; line-height: 28px;}
@@ -153,11 +161,11 @@
 .main .section2 .solution__box .box__title .solution__btn:after {background: url('../img/arrow.png') repeat-x left top / 14.5px auto;}
 .main .section2 .solution__box .box__title .solution__btn:hover:after {background-position:14.5px top;}
 /*모바일 설정*/
-@media all and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .main .section2 .solution__wrap {display: flex; flex-direction: column; padding: 145px 24px 80px;}
     .main .section2 .title {position: absolute; top: 97px; left: 24px;}
     .main .section2 .sub {padding: 0;}
-    .main .section2 .sub .sub__text {font-size: 30px; font-weight: 800; line-height: 44px;}
+    .main .section2 .sub .sub__text {font-size: 25px; font-weight: 900; line-height: 40px;}
     .main .section2 .solution {display: flex; justify-content: flex-start; align-items: center; flex-wrap: nowrap; flex-direction: column; padding-top: 60px;}
     .main .section2 .solution .solution__box {width: 100%;}
     .main .section2 .solution .box__title {padding: 48px 24px 60px 24px;}
@@ -220,7 +228,7 @@
 .main .section3 .b__list .business__link .b__link {display: flex; flex-direction: column; margin-top: 40px;}
 .main .section3 .b__list .business__link .b__link .b__btn {margin-top: 20px;}
 /*모바일 설정*/
-@media all and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .main .section3 .business__wrap {padding: 128px 24px 80px;}
     .main .section3 .title {top: 80px; left: 24px;}
     .main .section3 .sub {padding: 0;}
@@ -260,17 +268,17 @@
 .main .section4 .partner__wrap .p__experience .p__title span {font-size: 52px;}
 .main .section4 .partner__wrap .p__experience .p__sub {opacity: 0.8; text-align: right;}
 /*모바일 설정*/
-@media all and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .main .section4 .partner__wrap .pc {display: none;}
     .main .section4 .partner__wrap {padding: 80px 24px 100px;}
     .main .section4 .partner__wrap .title__box .title {font-size: 40px;}
-    .main .section4 .partner__wrap .title__box .sub__title {font-size: 16px;}
+    .main .section4 .partner__wrap .title__box .sub__title {font-size: 16px; line-height: 28px; letter-spacing: -0.25px;}
     .main .section4 .partner__wrap .p__link {margin-top: 48px;}
     .main .section4 .partner__wrap .p__experience {padding-top: 100px;}
     .main .section4 .partner__wrap .p__experience .p__list {flex-direction: column; justify-content: flex-start; align-items: flex-start;}
     .main .section4 .partner__wrap .p__list .p__title {font-size: 48px;}
     .main .section4 .partner__wrap .p__list .p__title span {font-size: 28px;}
-    .main .section4 .partner__wrap .p__list .p__sub {margin-top: 30px;}
+    .main .section4 .partner__wrap .p__list .p__sub {margin-top: 30px; text-align: left; line-height: 25px; opacity: 0.5;}
 }
 /*section5 issue,news 부분*/
 .main .section5 .news__wrap {width: 100%; max-width: 1600px; margin: auto; padding: 120px 80px;}
@@ -302,7 +310,7 @@
 .main .section5 .news__wrap .news__btn .btn:hover:before {width: 100%; height: 60px; left: 0; transition: 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);}
 .main .section5 .news__wrap .news__btn .btn span {position: relative;}
 /*모바일 설정*/
-@media all and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .main .section5 .news__wrap {padding: 60px 24px;}
     .main .section5 .news__wrap .title {font-size: 30px; font-weight: 900;}
     .main .section5 .news__wrap .news__list {padding-bottom: 0; height: auto;}
@@ -370,7 +378,7 @@
 .footer .footer__2 .sub__title .family a {color: #747474; font-size: 14px;}
 
 /*모바일 설정*/
-@media all and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .footer .footer__1 {display: block;}
     .footer .footer__1 .title {width: 100%;}
     .footer .footer__1 .title .title__title {padding: 30px 0 42px 24px; height: auto;}
@@ -407,6 +415,6 @@
     .footer .footer__2 .sub__title .family {display: block; width: 100%; margin-top: 60px;  border-top: 1px solid #2e2e2e; border-left: none;}
 }
 
-@media all and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
     .main .section1 .slick-dots {display: none;}
 }
