@@ -77,8 +77,8 @@
 .header.on .logo__link {background: url('../img/header_logo.png') no-repeat left center / 100% auto; opacity: 1;}
 
 /*inquiry 부분*/
-.inquiry .icon {position: absolute; height: 40px; line-height: 40px; right: 60px; top: 30px; padding: 0 30px; border: 0 solid #fff; background: linear-gradient(268deg, #007DC5 0%, #00A651 100%); border-radius: 25px;}
-.inquiry span {position: relative; height: 100%; font-size: 14px; font-weight: 900; color: #fff;}
+.inquiry .icon {position: absolute; height: 40px; line-height: 40px; right: 60px; top: 30px; padding: 0 30px; border: 0 solid #fff; background: linear-gradient(268deg, #007DC5 0%, #00A651 100%); border-radius: 25px; color: #fff; font-size: 14px; font-weight: 900;}
+.mo__btn .menu__close {display: none;}
 /*모바일 설정*/
 @media screen and (max-width: 1280px) {
     .header {height: 64px !important;}
